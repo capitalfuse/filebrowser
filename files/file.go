@@ -159,7 +159,7 @@ func (i *FileInfo) detectType(modify, saveContent bool) error {
 		i.detectSubtitles()
 		return nil
 	case strings.HasPrefix(mimetype, "audio"):
-		i.Type = "audio"
+		i.Type = "text"
 		return nil
 	case strings.HasPrefix(mimetype, "image"):
 		i.Type = "image"
